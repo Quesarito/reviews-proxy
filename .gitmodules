@@ -1,0 +1,6 @@
+[submodule "product"]
+	path = product
+	url = https://github.com/Quesarito/product-service.git
+[submodule "related-items"]
+	path = related-items
+	url = https://github.com/Quesarito/related-items-service.git

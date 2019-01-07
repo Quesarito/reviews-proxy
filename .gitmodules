@@ -4,3 +4,6 @@
 [submodule "related-items"]
 	path = related-items
 	url = https://github.com/Quesarito/related-items-service.git
+[submodule "reviews"]
+	path = reviews
+	url = https://github.com/Quesarito/reviews-service.git

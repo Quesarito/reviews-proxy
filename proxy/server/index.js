@@ -29,7 +29,7 @@ app.get('/reviews/:productId', (req, res) => {
 });
 
 app.get('/api/items', (req, res) => {
-  axios.get(`http://ec2-54-183-132-22.us-west-1.compute.amazonaws.com/api/items`)
+  axios.get(`http://ec2-54-183-132-22.us-west-1.compute.amazonaws.com:8888/api/items`)
     .then(response => {
       res.send(response.data);
     })
@@ -39,7 +39,7 @@ app.get('/api/items', (req, res) => {
 });
 
 app.get('/api/items/:itemId', (req, res) => {
-  axios.get(`http://ec2-54-183-132-22.us-west-1.compute.amazonaws.com/api/items/${req.params.itemId}`)
+  axios.get(`http://ec2-54-183-132-22.us-west-1.compute.amazonaws.com:8888/api/items/${req.params.itemId}`)
     .then(response => {
       res.send(response.data);
     })
@@ -49,7 +49,7 @@ app.get('/api/items/:itemId', (req, res) => {
 });
 
 app.get('/api/related/:itemId', (req, res) => {
-  axios.get(`http://ec2-54-183-132-22.us-west-1.compute.amazonaws.com/api/related/${req.params.itemId}`)
+  axios.get(`http://ec2-54-183-132-22.us-west-1.compute.amazonaws.com:8888/api/related/${req.params.itemId}`)
     .then(response => {
       console.log(req.url);
       res.send(response.data);
@@ -60,7 +60,7 @@ app.get('/api/related/:itemId', (req, res) => {
 });
 
 app.get('/api/frequent/:itemId', (req, res) => {
-  axios.get(`http://ec2-54-183-132-22.us-west-1.compute.amazonaws.com/api/frequent/${req.params.itemId}`)
+  axios.get(`http://ec2-54-183-132-22.us-west-1.compute.amazonaws.com:8888/api/frequent/${req.params.itemId}`)
     .then(response => {
       res.send(response.data);
     })
